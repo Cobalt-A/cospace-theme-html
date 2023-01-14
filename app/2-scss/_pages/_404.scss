@@ -1,0 +1,50 @@
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# First-screen-404
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+  Start section first-screen-404 styles
+--------------------------------------------------------------*/
+
+#first-screen-404 {
+  height: 100vh;
+  min-height: 820px;
+  position: relative;
+  background-image: url('../img/@2x/demo-bg\ copy.jpg');
+  background-size: 100%;
+  margin-top: -114px;
+  color: $lighten;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, darken(rgba($darken, 0.8), 5%), lighten(rgba($darken, 0.8), 5%));
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    padding-top: 300px;
+    position: relative;
+    z-index: 5;
+    .not-found {
+      .title {
+        font-size: 100px;
+        text-align: center;
+      }
+      .text {
+        font-size: 42px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+  End section first-screen-404 styles
+--------------------------------------------------------------*/

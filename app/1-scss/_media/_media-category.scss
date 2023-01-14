@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Posts-category
+--------------------------------------------------------------*/
+
+@import "vars";
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+  /*--------------------------------------------------------------
+    Start section posts-category styles ≥992px
+  --------------------------------------------------------------*/
+
+  #posts-category .post-category .img-wrapper {
+    padding: 0 90px;
+  }
+  #posts-category .post-category .img-wrapper::after {
+    left: 90px;
+    width: calc(100% - 180px);
+  }
+
+  /*--------------------------------------------------------------
+    End section posts-category styles ≥992px
+  --------------------------------------------------------------*/
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  /*--------------------------------------------------------------
+    Start section posts-category styles ≥768px
+  --------------------------------------------------------------*/
+
+  #posts-category .post-category .img-wrapper {
+    padding: 0 0;
+  }
+  #posts-category .post-category .img-wrapper::after {
+    left: 0;
+    width: 100%;
+  }
+
+  /*--------------------------------------------------------------
+    End section posts-category styles ≥768px
+  --------------------------------------------------------------*/
+}

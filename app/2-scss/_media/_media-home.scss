@@ -1,0 +1,179 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# First-screen
+# Stiky-posts
+# News-board
+# New-posts
+--------------------------------------------------------------*/
+
+@import "vars";
+
+// ≥992px
+@media (max-width: 992px) {
+
+  /*--------------------------------------------------------------
+    Start section first-screen styles ≥992px
+  --------------------------------------------------------------*/
+
+  #first-screen .container .content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    bottom: 60px;
+  }
+  #first-screen .text-block {
+    margin-bottom: 20px;
+  }
+  #first-screen .text-block,
+  #first-screen .container .content,
+  #first-screen .container .content .text {
+    text-align: center;
+  }
+  #first-screen .social-icons ul {
+    justify-content: center;
+  }
+  #first-screen::after {
+    display: none;
+  }
+  #first-screen .bg-text span {
+    padding: 0 5px;
+  }
+
+  /*--------------------------------------------------------------
+    End section first-screen styles ≥992px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section stiky-posts styles ≥992px
+  --------------------------------------------------------------*/
+
+  #stiky-posts .stiky-post .right-block .title {
+    left: 0;
+    top: 0px;
+    font-size: 46px;
+    margin-top: 40px;
+  }
+  #stiky-posts .stiky-post {
+    padding-top: 200px;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  #stiky-posts .stiky-post:nth-child(even) .right-block {
+    padding-left: 15px;
+  }
+  #stiky-posts .stiky-post:nth-child(even) .right-block .title {
+    left: 0;
+  }
+  #stiky-posts .stiky-post .right-block p {
+    width: calc(100% - 100px);
+  }
+
+  /*--------------------------------------------------------------
+    End section stiky-posts styles ≥992px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section new-posts styles ≥992px
+  --------------------------------------------------------------*/
+
+  #new-posts .new-post .img-block, .stiky-post .left-block {
+    padding: 0 100px;
+  }
+  #new-posts .new-post .content-block {
+    padding: 0;
+  }
+  #new-posts .new-post .content-block p::before {
+    display: none;
+  }
+  #new-posts .new-post .content-block p {
+    width: 100%;
+  }
+
+  /*--------------------------------------------------------------
+    End section new-posts styles ≥992px
+  --------------------------------------------------------------*/
+}
+
+
+// ≥768px
+@media (max-width: 768px) {
+
+  /*--------------------------------------------------------------
+    Start section first-screen styles ≥768px
+  --------------------------------------------------------------*/
+
+  #first-screen .text-block {
+    width: 100%;
+  }
+
+  /*--------------------------------------------------------------
+    End section first-screen styles ≥768px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section stiky-posts styles ≥768px
+  --------------------------------------------------------------*/
+
+  #stiky-posts .stiky-post .right-block p::before {
+    display: none;
+  }
+  #stiky-posts .stiky-post .right-block p,
+  #stiky-posts .stiky-post:nth-child(even) .right-block p {
+    width: 100%;
+    left: 0;
+  }
+  #stiky-posts .link {
+    left: 0;
+  }
+
+  /*--------------------------------------------------------------
+    End section stiky-posts styles ≥768px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section news-board styles
+  --------------------------------------------------------------*/
+
+  #news-board .container .item {
+    margin-left: 95px;
+  }
+
+  /*--------------------------------------------------------------
+    End section news-board styles ≥992px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section new-posts styles ≥768px
+  --------------------------------------------------------------*/
+
+  #new-posts .new-post .img-block, .stiky-post .left-block {
+    padding: 0 15px;
+  }
+  #new-posts .new-post .content-block {
+    padding: 0 15px;
+  }
+
+  /*--------------------------------------------------------------
+    End section new-posts styles ≥768px
+  --------------------------------------------------------------*/
+}
+
+
+// ≥576px
+@media (max-width: 576px) {
+
+  /*--------------------------------------------------------------
+    Start section first-screen styles ≥576px
+  --------------------------------------------------------------*/
+
+  #first-screen .bg-text span {
+    padding: 0;
+    font-size: 42px;
+  }
+
+  /*--------------------------------------------------------------
+    End section first-screen styles ≥576px
+  --------------------------------------------------------------*/
+}

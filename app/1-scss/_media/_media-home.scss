@@ -1,0 +1,285 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# First-screen
+# Spheres
+# Stiky-posts
+# New-posts
+--------------------------------------------------------------*/
+
+@import 'vars';
+
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+  /*--------------------------------------------------------------
+    Start section first-screen styles ≥992px
+  --------------------------------------------------------------*/
+
+  #first-screen .container .content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    bottom: 10px;
+  }
+  #first-screen .text-block {
+    margin-bottom: 20px;
+  }
+  #first-screen .text-block,
+  #first-screen .container .content,
+  #first-screen .container .content .text {
+    text-align: center;
+  }
+  #first-screen .social-icons ul {
+    justify-content: center;
+  }
+
+  /*--------------------------------------------------------------
+    End section first-screen styles ≥992px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section spheres styles ≥992px
+  --------------------------------------------------------------*/
+
+  // circles and text-block hide
+  #spheres .container .text-block,
+  #spheres .container .sphere::before,
+  #spheres .container .sphere::after {
+    display: none;
+  }
+
+  // spheres
+  #spheres .container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0;
+  }
+  #spheres .container .sphere {
+    border-radius: 0;
+    height: 50px;
+    width: 100%;
+    position: static;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: none;
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+    padding: 35px 30px;
+    &:last-of-type {
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+    }
+  }
+  #spheres .container .sphere .fa {
+    display: block;
+  }
+  #spheres .container .sphere .title {
+    font-size: 32px;
+    line-height: inherit;
+    margin-right: 20px;
+    width: auto;
+  }
+  #spheres .container .sphere .sub-title {
+    font-size: 16px;
+    letter-spacing: 3px;
+    width: auto;
+  }
+  #spheres .container {
+    height: auto;
+  }
+
+  // verticle text
+  #spheres {
+    position: static;
+    .vertical-text {
+      width: 300px;
+      left: calc(50% - 150px);
+      font-size: 64px;
+      color: rgba($color: #fff, $alpha: 0.5);
+      top: 0;
+      height: 100vh;
+      min-height: 720px;
+      padding-bottom: 400px;
+      padding-top: 200px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-end;
+
+      span {
+        position: relative;
+        padding: 0 15px;
+        &:nth-child(3n) {
+          top: 40px
+        }
+        &:nth-child(2n) {
+          top: 20px
+        }
+      }
+    }
+  }
+
+  /*--------------------------------------------------------------
+    End section spheres styles ≥992px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section stiky-post styles ≥992px
+  --------------------------------------------------------------*/
+
+  #stiky-posts .stiky-post .content-block .title {
+    left: 0;
+    top: -35px;
+    margin-bottom: -20px;
+    font-size: 46px;
+  }
+  #stiky-posts .stiky-post {
+    padding-top: 200px;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  #stiky-posts .stiky-post:nth-child(even) .content-block {
+    padding-left: 15px;
+  }
+  #stiky-posts .stiky-post .img-block {
+    padding: 0 100px;
+  }
+  #stiky-posts .stiky-post .img-block::after {
+    left: 100px;
+    width: calc(100% - 200px);
+  }
+  #stiky-posts .stiky-post:nth-child(even) .content-block p {
+    width: calc(100% - 200px);
+  }
+
+  /*--------------------------------------------------------------
+    End section stiky-posts styles ≥992px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section news-board styles ≥992px
+  --------------------------------------------------------------*/
+
+  #news-board .board .white-bg {
+    width: 100%;
+  }
+
+  /*--------------------------------------------------------------
+    End section news-board styles ≥992px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section new-posts styles ≥992px
+  --------------------------------------------------------------*/
+
+  #new-posts .new-post .img-block {
+    padding: 0 100px;
+  }
+  #new-posts .new-post .content-block {
+    padding: 0;
+  }
+  #new-posts .new-post .content-block p::before {
+    display: none;
+  }
+  #new-posts .new-post .content-block p {
+    width: 100%;
+  }
+
+  /*--------------------------------------------------------------
+    End section new-posts styles ≥992px
+  --------------------------------------------------------------*/
+}
+
+
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  /*--------------------------------------------------------------
+    Start section first-screen styles ≥768px
+  --------------------------------------------------------------*/
+
+  #first-screen .text-block {
+    width: 100%;
+  }
+
+  /*--------------------------------------------------------------
+    End section first-screen styles ≥768px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section stiky-posts styles ≥768px
+  --------------------------------------------------------------*/
+
+  #stiky-posts .stiky-post .img-block {
+    padding: 0 15px;
+  }
+  #stiky-posts .stiky-post .img-block::after {
+    left: 60px;
+    width: calc(100% - 120px);
+  }
+  #stiky-posts .stiky-post .content-block p::before {
+    display: none;
+  }
+  #stiky-posts .stiky-post .content-block p,
+  #stiky-posts .stiky-post:nth-child(even) .content-block p {
+    width: 100%;
+    left: 0;
+  }
+  #stiky-posts .link {
+    left: 0;
+  }
+
+  /*--------------------------------------------------------------
+    End section stiky-posts styles ≥768px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section news-board styles ≥768px
+  --------------------------------------------------------------*/
+
+  #news-board .board .item {
+    margin-left: 95px;
+    padding: 28px 15px 40px;
+  }
+
+  /*--------------------------------------------------------------
+    End section news-board styles ≥768px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section new-posts styles ≥768px
+  --------------------------------------------------------------*/
+
+  #new-posts .new-post .img-block, .stiky-post .img-block {
+    padding: 0 15px;
+  }
+  #new-posts .new-post .content-block {
+    padding: 0 15px;
+  }
+
+  /*--------------------------------------------------------------
+    End section new-posts styles ≥768px
+  --------------------------------------------------------------*/
+}
+
+
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+  /*--------------------------------------------------------------
+    Start section spheres styles ≥576px
+  --------------------------------------------------------------*/
+
+  #spheres .container .sphere .title {
+    font-size: 22px;
+  }
+  #spheres .container .sphere .sub-title {
+    font-size: 14px;
+  }
+
+  /*--------------------------------------------------------------
+    End section spheres styles ≥576px
+  --------------------------------------------------------------*/
+}

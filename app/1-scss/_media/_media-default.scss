@@ -1,0 +1,176 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Header
+# Footer
+--------------------------------------------------------------*/
+
+@import "vars";
+
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+  /*--------------------------------------------------------------
+    Start footer styles ≥1200px
+  --------------------------------------------------------------*/
+
+  #footer .info .right-item .wrapper, #footer .info .wrapper {
+    width: 480px - 15px;
+  }
+
+  /*--------------------------------------------------------------
+    End footer styles ≥1200px
+  --------------------------------------------------------------*/
+}
+
+
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+  /*--------------------------------------------------------------
+    Start header styles ≥992px
+  --------------------------------------------------------------*/
+
+  #header-wrapper .hamburger {
+    display: block;
+  }
+  #header-wrapper #nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    overflow: scroll;
+    ul {
+     flex-direction: column;
+      li{
+        margin-left: 0;
+        margin-top: 65px;
+        a {
+          color: #0B0946;
+          &:hover {
+            color: #0B0946;
+          }
+        }
+      }
+    }
+  }
+  #header-wrapper .is-active {
+    position: fixed;
+    right: calc(50% - 345px);
+  }
+  #header-wrapper .nav-active {
+    display: block !important;
+  }
+  #header-wrapper .call-to-action {
+    display: none;
+  }
+
+  /*--------------------------------------------------------------
+    End header styles ≥992px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start footer styles ≥992px
+  --------------------------------------------------------------*/
+
+  #footer .info .row {
+    flex-direction: column-reverse;
+  }
+  #footer .info .right-item, #footer .info .left-item {
+    justify-content: center;
+  }
+  #footer .info .right-item .wrapper, #footer .info .left-item .wrapper {
+    width: 720px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #footer .info .wrapper {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  #footer .bottom-block .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #footer .logo-container img, .copyright {
+    display: none;
+  }
+
+  /*--------------------------------------------------------------
+    End footer styles ≥992px
+  --------------------------------------------------------------*/
+}
+
+
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  /*--------------------------------------------------------------
+    Start header styles ≥768px
+  --------------------------------------------------------------*/
+
+  #header-wrapper .is-active {
+    right: calc(50% - 255px);
+  }
+
+  /*--------------------------------------------------------------
+    Start header styles ≥768px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start footer styles ≥768px
+  --------------------------------------------------------------*/
+
+  #footer .info .right-item .wrapper, #footer .info .left-item .wrapper {
+    width: 540px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #footer .board .item {
+    padding: 50px 30px;
+  }
+  #footer .board .item .title,
+  #footer .board .item .text,
+  #footer .board .item ul li {
+    text-align: center;
+  }
+  #footer .board .item ul {
+    padding: 0;
+  }
+  #footer .board .item ul li::before {
+    display: none;
+  }
+  #footer .board {
+    padding: 50px 0;
+  }
+
+  /*--------------------------------------------------------------
+    End footer styles ≥768px
+  --------------------------------------------------------------*/
+}
+
+
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+  /*--------------------------------------------------------------
+    Start header styles 576px
+  --------------------------------------------------------------*/
+
+  #header-wrapper .is-active {
+    right: 15px;
+  }
+
+  /*--------------------------------------------------------------
+    End header styles 576px
+  --------------------------------------------------------------*/
+}

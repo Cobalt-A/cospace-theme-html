@@ -1,0 +1,198 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# First-screen-post
+# Post-content
+# Tab-nav
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+  Start section first-screen-post styles
+--------------------------------------------------------------*/
+
+#first-screen-post {
+  height: calc(100vh + 70px);
+  min-height: 720px;
+  background-image: url('../img/@2x/DI_p12_1.jpg');
+  background-size: cover;
+  position: relative;
+  top: -114px;
+  &::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 70px;
+    background-color: $lighten;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $darken, $alpha: 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    position: relative;
+    height: 100%;
+  }
+
+  .text-block {
+    position: absolute;
+    bottom: 400px;
+    .title {
+      font-size: 64px;
+      text-transform: uppercase;
+      color: $lighten;
+    }
+    .sub-title {
+      text-transform: uppercase;
+      color: rgba($color: $lighten, $alpha: 0.5);
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+  End section first-screen-post styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+  Start section post-content styles
+--------------------------------------------------------------*/
+
+#post-content {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+
+  // informational post content block
+  .text-block {
+    .sub-title {
+      color: rgba($color: $darken, $alpha: 0.5);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 14px;
+    }
+    .title {
+      font-size: 34px;
+      text-transform: uppercase;
+      padding-bottom: 150px;
+    }
+  }
+
+  .content {
+    .sub-title {
+      padding-bottom: 30px;
+      span {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba($color: $darken, $alpha: 0.5);
+        text-transform: uppercase;
+        color: rgba($color: $darken, $alpha: 0.5);
+        letter-spacing: 3px;
+        padding-bottom: 10px;
+      }
+    }
+    h1, h2, h3, h4 ,h5 ,h6 {
+      font-size: 34px;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+      padding-left: 8.33333%;
+      &::after {
+        content: '';
+        display: block;
+        width: 75px;
+        height: 1px;
+        background-color: rgba($color: $darken, $alpha: 0.5);
+        margin-top: 30px;
+      }
+    }
+    p {
+      padding: 20px 95px 20px 95px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 8.33333%;
+      padding-right: 8.33333%;
+      margin: auto;
+    }
+    figure {
+      margin: auto;
+      width: 100% !important;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+  End section post-content styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+  Start tab nav section
+--------------------------------------------------------------*/
+
+#tab-nav {
+  .sub-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 150px 0;
+    position: relative;
+    .sub-title {
+      width: 500px;
+      color: rgba($color: $darken, $alpha: 0.5);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+
+      &::after {
+        content: '';
+        display: block;
+        background-color: rgba($color: $darken, $alpha: 0.5);
+        width: 1px;
+        height: 50px;
+        position: absolute;
+        bottom: 68px;
+      }
+    }
+  }
+  .tab-link {
+    background-color: lighten($darken, 3%);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    .title {
+      color: #fff;
+      text-align: center;
+      font-size: 28px;
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &:nth-child(2) {
+      background-color: lighten($darken, 7%);
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+  End tab nav section
+--------------------------------------------------------------*/

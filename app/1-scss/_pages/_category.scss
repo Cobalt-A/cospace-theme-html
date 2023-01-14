@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# First-screen-category
+# Posts-category
+# Header
+# Tab navigation
+# Footer
+--------------------------------------------------------------*/
+
+@import "vars";
+
+/*--------------------------------------------------------------
+  Start section first-screen-category styles
+--------------------------------------------------------------*/
+
+#first-screen-category {
+  padding: 200px 0;
+
+  .text-block {
+    .title {
+      font-size: 42px;
+      text-transform: uppercase;
+    }
+    .text {
+      padding: 50px 0 0 95px;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 14;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 75px;
+        height: 1px;
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        position: absolute;
+        left: 0;
+        top: 62px;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+  End section first-screen-category styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+  Start section posts-category styles
+--------------------------------------------------------------*/
+
+#posts-category {
+  .post-category {
+    padding-bottom: 70px;
+    .post-permalink {
+      display: block;
+    }
+
+    .img-wrapper {
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          -45deg,
+          rgba($color: #5c59b8, $alpha: 0.5),
+          rgba($color: rgb(0, 48, 88), $alpha: 0.5)
+        );
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .content-block {
+      position: relative;
+      bottom: 30px;
+      .title {
+        text-transform: uppercase;
+        font-size: 42px;
+        text-align: center;
+      }
+      .sub-title {
+        color: rgba($color: #fff, $alpha: 0.5);
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+  End section posts-category styles
+--------------------------------------------------------------*/

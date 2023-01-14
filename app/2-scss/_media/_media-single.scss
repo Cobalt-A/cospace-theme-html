@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# First-screen-post
+# Post-content
+--------------------------------------------------------------*/
+
+@import "vars";
+
+// ≥992px
+@media (max-width: 992px) {
+
+  /*--------------------------------------------------------------
+    Start section first-screen-post styles ≥992px
+  --------------------------------------------------------------*/
+
+  #first-screen-post .banner {
+    padding: 30px 0;
+  }
+  #first-screen-post .banner .item {
+    padding: 0 15px 30px 15px;
+  }
+  #first-screen-post .text-block {
+    bottom: 470px;
+  }
+
+  /*--------------------------------------------------------------
+    End section first-screen-post styles ≥992px
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+    Start section post-content styles ≥992px
+  --------------------------------------------------------------*/
+
+  #post-content .content p, #post-content .content h1, #post-content .content h2, #post-content .content h3, #post-content .content h4, #post-content .content h5, #post-content .content h6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /*--------------------------------------------------------------
+    End section post-content styles ≥992px
+  --------------------------------------------------------------*/
+}
+
+// ≥768px
+@media (max-width: 768px) {
+
+  /*--------------------------------------------------------------
+    Start section post-content styles ≥768px
+  --------------------------------------------------------------*/
+
+  #post-content .content img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /*--------------------------------------------------------------
+    End section post-content styles ≥768px
+  --------------------------------------------------------------*/
+}

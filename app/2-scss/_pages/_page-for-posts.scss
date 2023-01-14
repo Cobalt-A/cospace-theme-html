@@ -1,0 +1,110 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# List-posts
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+  Start section list-posts styles
+--------------------------------------------------------------*/
+
+#list-posts {
+  padding-top: 200px;
+  .no-result {
+    p {
+      font-size: 64px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: rgba($color: #fff, $alpha: 0.5);
+      text-align: center;
+    }
+  }
+  
+  .post {
+    padding-bottom: 250px;
+  
+    // content block
+    .right-block {
+      padding: 0 95px 0 95px;
+  
+      .title {
+        font-size: 54px;
+        text-transform: uppercase;
+      }
+  
+      .date {
+        color: rgba($color: #fff, $alpha: 0.5);
+        font-size: 20px;
+        text-transform: uppercase;
+        word-spacing: 5px;
+        position: relative;
+        span {
+          font-size: 15px;
+          letter-spacing: 3px;
+        }
+      }
+  
+      p {
+        padding: 50px 0 20px;
+        position: relative;
+  
+        &::before {
+          content: '';
+          display: block;
+          height: 1px;
+          width: 60px;
+          background-color: rgba($color: #fff, $alpha: 0.5);
+          position: absolute;
+          top: 25px;
+          left: -80px;
+        }
+      }
+  
+      .link {
+        left: 0;
+      }
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse !important;
+    }
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    .screen-reader-text {
+      font-size: 16px;
+      color: rgba($color: #fff, $alpha: 0.5);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    .nav-links {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      .fa {
+        font-size: 14px;
+        margin: 0 5px;
+      }
+      .page-numbers {
+        margin-right: 30px;
+        font-size: 18px;
+        padding: 0 10px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        &:nth-last-child() {
+          margin-right: 0;
+        }
+      }
+      .current {
+        background-color: #fff;
+        color: #0B0946;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+  End section list-posts styles
+--------------------------------------------------------------*/
